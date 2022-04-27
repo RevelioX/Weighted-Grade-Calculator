@@ -1,0 +1,148 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+  body{
+  background-image: linear-gradient(to top, #92e7fe 0%, #78a4ea 100%);
+  font-family: 'Space Mono', monospace;
+  margin: 0;
+  min-height: 627px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  padding: 5px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.icon{
+  width: 40px;
+  height: auto;
+  margin-right: 20px;
+  min-width: 40px;
+}
+
+.main{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.entradas{
+   display: flex;
+   gap: 50px;
+   flex-direction: row;
+   justify-content: center;
+   padding: 10px;
+}
+
+.entradas:last-child .buttons{
+    margin-left: -40px;
+}
+
+.entradas input{
+  -webkit-appearance: none; 
+  border-radius: 5px;
+  padding: 10px;
+  border-color: #13547a;
+  font-size: 20px;
+  width: 20%;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.delete{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(250, 96, 96);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.create{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(84, 149, 44);
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+i{
+  display: flex;
+
+}
+
+.calcular{
+  padding: 10px;
+  background-color: rgb(84, 149, 44);
+  border-radius: 10px;
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.error{
+  background-color: rgb(251, 102, 102);
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  .main{
+    width: 80%;
+  }
+  .entradas{
+    gap: 5px;
+    justify-content: flex-start;
+  }
+  .entradas .value{
+    margin-right: 10px
+  }
+  .buttons{
+    margin-left: 20px;
+  }
+  .entradas:last-child .buttons{
+    margin-left: 12px;
+  }
+  .entradas input{
+    font-size: small;
+  }
+}
