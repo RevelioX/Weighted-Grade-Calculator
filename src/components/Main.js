@@ -53,7 +53,7 @@ export default function Main(){
         if(completed){
             setFinal(calcularPromedioPonderado(Datos));
         }else{
-            setErrorText( error => error + "-Hay campos vacios");
+            setErrorText( error => error + "-There's empty fields");
         }
 
         let sumaPorcentages = 0
@@ -62,13 +62,13 @@ export default function Main(){
         }
 
         if(sumaPorcentages !== 100){
-            setErrorText(error => error + "\t-La suma de porcentajes debe ser 100%")
+            setErrorText(error => error + "\t-The total addition of percentages should be 100%")
         }
     }
 
     return(
         <div className="main">
-            <p>Calculadora Ponderada</p>
+            <p>Weighted Calculator</p>
             <form>
                 {displayedEntradas}
             </form>
