@@ -3,6 +3,7 @@ import Entradas from "./Entradas.js"
 import Final from "./Final.js"
 import calcularPromedioPonderado from "../calcularPromedioPonedrado.js";
 import Error from "./Error.js";
+import { motion } from "framer-motion";
 
 export default function Main(){
     const [Datos, setDatos] = react.useState([{
@@ -72,7 +73,7 @@ export default function Main(){
             <form>
                 {displayedEntradas}
             </form>
-            <input className="calcular" type="button" value="Calcular" onClick={calcularFinal}></input>
+            <motion.input onHoverStart={{scale: 2}} className="calcular" type="button" value="Calcular" onClick={calcularFinal}></motion.input>
             {!errorText && final!=0 ? <Final final={final}/> : ""}
             {errorText && <Error error={errorText}/>}
         </div>
