@@ -114,6 +114,7 @@ i{
   font-size: 15px;
   color: white;
   cursor: pointer;
+  border: none;
 }
 
 .error{

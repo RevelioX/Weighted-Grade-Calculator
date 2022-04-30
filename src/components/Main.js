@@ -73,7 +73,7 @@ export default function Main(){
             <form>
                 {displayedEntradas}
             </form>
-            <motion.input onHoverStart={{scale: 2}} className="calcular" type="button" value="Calcular" onClick={calcularFinal}></motion.input>
+            <motion.input whileHover={{scale: 1.1}} whileTap={{scale: 0.95}} className="calcular" type="button" value="Calcular" onClick={calcularFinal}></motion.input>
             {!errorText && final!=0 ? <Final final={final}/> : ""}
             {errorText && <Error error={errorText}/>}
         </div>
